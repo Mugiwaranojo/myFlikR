@@ -9,12 +9,14 @@
 #import <Foundation/Foundation.h>
 
 typedef struct {
-    double longiture;
+    double longitude;
     double latitude;
 } PictureFetcherLocation;
 
+typedef void(^CompletionBlock)(NSArray * pictures);
+
 @interface FlikRPictureFetcher : NSObject
 
--(NSArray *) picturesArroundLocation: (PictureFetcherLocation) location;
+-(void) pictureArroundLocation:(PictureFetcherLocation)location completion:(CompletionBlock)completion;
 
 @end

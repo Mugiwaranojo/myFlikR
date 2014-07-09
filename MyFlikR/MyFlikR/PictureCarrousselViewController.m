@@ -15,6 +15,7 @@
 <ReaderViewDelegate>
 
 @property (weak, nonatomic) IBOutlet ReaderView *readerView;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
 @property (strong, nonatomic) NSArray * pictures;
 
 @end
@@ -30,10 +31,18 @@
     //temporaire:
     PictureFetcherLocation location;
     location.latitude= -20.300842;
-    location.longiture= 57.582092;
-    FlikRPictureFetcher * fetcher= [FlikRPictureFetcher new];
-    self.pictures = [fetcher picturesArroundLocation:location];
+    location.longitude= 57.582092;
     
+    self.readerView.hidden = YES;
+    
+    FlikRPictureFetcher * fetcher= [FlikRPictureFetcher new];
+    [fetcher pictureArroundLocation:location completion:^(NSArray *pictures){
+        self.pictures = pictures;
+        self.readerView.hidden = NO;
+        [self.readerView displayPageAtIndex:0 animated:NO];
+        
+        self.activityIndicator.hidden=TRUE;
+    }];
     self.readerView.delegate = self;
     
 }
@@ -49,6 +58,8 @@
     NSData * imageData = [NSData dataWithContentsOfURL: p.url];
     UIImage * testImage= [UIImage imageWithData:imageData];
     UIImageView * imageView = [[UIImageView alloc]initWithImage:testImage];
+    imageView.contentMode= UIViewContentModeScaleAspectFit;
+    
     return imageView;
 }
 @end
