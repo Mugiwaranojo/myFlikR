@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6AB423D3196D425D005B3E26 /* PictureCarrousselViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB423D2196D425D005B3E26 /* PictureCarrousselViewController.m */; };
+		6AB423DA196D4552005B3E26 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB423D9196D4552005B3E26 /* Picture.m */; };
+		6AB423DD196D46B6005B3E26 /* FlikRPictureFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB423DC196D46B6005B3E26 /* FlikRPictureFetcher.m */; };
 		6AB8CE22196C333D00714DE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8CE21196C333D00714DE9 /* Foundation.framework */; };
 		6AB8CE24196C333D00714DE9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8CE23196C333D00714DE9 /* CoreGraphics.framework */; };
 		6AB8CE26196C333D00714DE9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8CE25196C333D00714DE9 /* UIKit.framework */; };
@@ -22,6 +25,8 @@
 		6AB8CE43196C333D00714DE9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AB8CE27196C333D00714DE9 /* CoreData.framework */; };
 		6AB8CE4B196C333D00714DE9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8CE49196C333D00714DE9 /* InfoPlist.strings */; };
 		6AB8CE4D196C333D00714DE9 /* MyFlikRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8CE4C196C333D00714DE9 /* MyFlikRTests.m */; };
+		6AB8CE58196C372400714DE9 /* ReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8CE57196C372400714DE9 /* ReaderView.m */; };
+		6AB8CE5A196C39D600714DE9 /* Storyboard_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8CE59196C39D600714DE9 /* Storyboard_iphone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6AB423D1196D425D005B3E26 /* PictureCarrousselViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCarrousselViewController.h; sourceTree = "<group>"; };
+		6AB423D2196D425D005B3E26 /* PictureCarrousselViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCarrousselViewController.m; sourceTree = "<group>"; };
+		6AB423D8196D4552005B3E26 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		6AB423D9196D4552005B3E26 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		6AB423DB196D46B6005B3E26 /* FlikRPictureFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlikRPictureFetcher.h; sourceTree = "<group>"; };
+		6AB423DC196D46B6005B3E26 /* FlikRPictureFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlikRPictureFetcher.m; sourceTree = "<group>"; };
 		6AB8CE1E196C333D00714DE9 /* MyFlikR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFlikR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6AB8CE21196C333D00714DE9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6AB8CE23196C333D00714DE9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +64,9 @@
 		6AB8CE48196C333D00714DE9 /* MyFlikRTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MyFlikRTests-Info.plist"; sourceTree = "<group>"; };
 		6AB8CE4A196C333D00714DE9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6AB8CE4C196C333D00714DE9 /* MyFlikRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFlikRTests.m; sourceTree = "<group>"; };
+		6AB8CE56196C372400714DE9 /* ReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderView.h; sourceTree = "<group>"; };
+		6AB8CE57196C372400714DE9 /* ReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderView.m; sourceTree = "<group>"; };
+		6AB8CE59196C39D600714DE9 /* Storyboard_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iphone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6AB423D4196D42F9005B3E26 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6AB423D1196D425D005B3E26 /* PictureCarrousselViewController.h */,
+				6AB423D2196D425D005B3E26 /* PictureCarrousselViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6AB423D5196D4310005B3E26 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AB8CE59196C39D600714DE9 /* Storyboard_iphone.storyboard */,
+				6AB423D6196D439E005B3E26 /* Reader */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6AB423D6196D439E005B3E26 /* Reader */ = {
+			isa = PBXGroup;
+			children = (
+				6AB8CE57196C372400714DE9 /* ReaderView.m */,
+				6AB8CE56196C372400714DE9 /* ReaderView.h */,
+			);
+			name = Reader;
+			sourceTree = "<group>";
+		};
+		6AB423D7196D43B4005B3E26 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6AB8CE35196C333D00714DE9 /* MyFlikR.xcdatamodeld */,
+				6AB423D8196D4552005B3E26 /* Picture.h */,
+				6AB423D9196D4552005B3E26 /* Picture.m */,
+				6AB423DB196D46B6005B3E26 /* FlikRPictureFetcher.h */,
+				6AB423DC196D46B6005B3E26 /* FlikRPictureFetcher.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		6AB8CE15196C333D00714DE9 = {
 			isa = PBXGroup;
 			children = (
@@ -117,8 +170,9 @@
 			children = (
 				6AB8CE32196C333D00714DE9 /* AppDelegate.h */,
 				6AB8CE33196C333D00714DE9 /* AppDelegate.m */,
-				6AB8CE38196C333D00714DE9 /* Images.xcassets */,
-				6AB8CE35196C333D00714DE9 /* MyFlikR.xcdatamodeld */,
+				6AB423D5196D4310005B3E26 /* View */,
+				6AB423D4196D42F9005B3E26 /* Controller */,
+				6AB423D7196D43B4005B3E26 /* Model */,
 				6AB8CE2A196C333D00714DE9 /* Supporting Files */,
 			);
 			path = MyFlikR;
@@ -127,6 +181,7 @@
 		6AB8CE2A196C333D00714DE9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6AB8CE38196C333D00714DE9 /* Images.xcassets */,
 				6AB8CE2B196C333D00714DE9 /* MyFlikR-Info.plist */,
 				6AB8CE2C196C333D00714DE9 /* InfoPlist.strings */,
 				6AB8CE2F196C333D00714DE9 /* main.m */,
@@ -230,6 +285,7 @@
 			files = (
 				6AB8CE2E196C333D00714DE9 /* InfoPlist.strings in Resources */,
 				6AB8CE39196C333D00714DE9 /* Images.xcassets in Resources */,
+				6AB8CE5A196C39D600714DE9 /* Storyboard_iphone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,8 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AB423DA196D4552005B3E26 /* Picture.m in Sources */,
 				6AB8CE37196C333D00714DE9 /* MyFlikR.xcdatamodeld in Sources */,
+				6AB8CE58196C372400714DE9 /* ReaderView.m in Sources */,
+				6AB423D3196D425D005B3E26 /* PictureCarrousselViewController.m in Sources */,
 				6AB8CE34196C333D00714DE9 /* AppDelegate.m in Sources */,
+				6AB423DD196D46B6005B3E26 /* FlikRPictureFetcher.m in Sources */,
 				6AB8CE30196C333D00714DE9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +509,7 @@
 				6AB8CE52196C333D00714DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6AB8CE53196C333D00714DE9 /* Build configuration list for PBXNativeTarget "MyFlikRTests" */ = {
 			isa = XCConfigurationList;
@@ -457,6 +518,7 @@
 				6AB8CE55196C333D00714DE9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

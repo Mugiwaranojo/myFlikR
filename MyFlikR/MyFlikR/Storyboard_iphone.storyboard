@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="LcB-xD-842">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="p6G-7d-hao">
+            <objects>
+                <viewController id="Tno-8A-zpC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TGJ-ew-LVa"/>
+                        <viewControllerLayoutGuide type="bottom" id="64d-ec-zjG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sDL-hZ-NiV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fjs-Dj-a3k">
+                                <rect key="frame" x="102" y="240" width="117" height="88"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Click Me!">
+                                    <color key="titleColor" red="0.41263686129999999" green="0.67638001820000004" blue="0.8316035584" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ymB-cP-2CS" kind="push" id="rac-QN-kBY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vvN-mh-Ht5">
+                        <barButtonItem key="backBarButtonItem" title="Retour" id="zQc-P6-gsu"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hga-Uq-nWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="37" y="12"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="odc-uS-xfc">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="LcB-xD-842" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uE2-mz-Ktg">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Tno-8A-zpC" kind="relationship" relationship="rootViewController" id="FBa-Mx-JSS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPf-U7-SoE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-435" y="112"/>
+        </scene>
+        <!--Picture Carroussel View Controller-->
+        <scene sceneID="P3I-cp-Bxh">
+            <objects>
+                <viewController id="ymB-cP-2CS" customClass="PictureCarrousselViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yQY-Ge-0BQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="cQA-AH-d1M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HVt-Eh-4Tr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="38a-wd-fQN" customClass="ReaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="38a-wd-fQN" firstAttribute="leading" secondItem="HVt-Eh-4Tr" secondAttribute="leading" id="KWY-B5-VMw"/>
+                            <constraint firstAttribute="trailing" secondItem="38a-wd-fQN" secondAttribute="trailing" id="kTY-OB-BKr"/>
+                            <constraint firstItem="cQA-AH-d1M" firstAttribute="top" secondItem="38a-wd-fQN" secondAttribute="bottom" id="pJz-Lw-wPD"/>
+                            <constraint firstItem="38a-wd-fQN" firstAttribute="top" secondItem="HVt-Eh-4Tr" secondAttribute="top" id="pRB-CY-oB7"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bex-KD-V65"/>
+                    <connections>
+                        <outlet property="readerView" destination="38a-wd-fQN" id="Fl2-9y-Y3N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="78L-Oi-DNw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="456" y="12"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
