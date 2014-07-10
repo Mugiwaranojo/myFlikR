@@ -38,7 +38,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ymB-cP-2CS" kind="push" id="dQ4-DR-PTK"/>
+                                            <segue destination="ymB-cP-2CS" kind="push" identifier="CITY_SELECTED" id="dQ4-DR-PTK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

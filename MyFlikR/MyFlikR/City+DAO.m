@@ -33,9 +33,15 @@
 {
     City * city = [NSEntityDescription insertNewObjectForEntityForName:@"City" inManagedObjectContext:[self getContext]];
     
-    city.name = @"Ile maurice";
-    city.latitude=@(-20.300842);
-    city.longitude=@(57.582092);
+    if(random()%2==0){
+        city.name = @"Noisy le sec";
+        city.latitude=@(48.8894);
+        city.longitude=@(2.4503);
+    }else{
+        city.name = @"Ile maurice";
+        city.latitude=@(-20.300842);
+        city.longitude=@(57.582092);
+    }
     return city;
 }
 

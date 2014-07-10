@@ -7,6 +7,7 @@
 //
 
 #import "CityTableViewController.h"
+#import "PictureCarrousselViewController.h"
 #import "City+DAO.h"
 
 @interface CityTableViewController ()
@@ -69,6 +70,19 @@
     [City delete:c];
     [self.cities removeObject:c];
     [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+        if([segue.identifier  isEqual: @"CITY_SELECTED"])
+        {
+            UITableViewCell * cellSelected= (UITableViewCell *) sender;
+            NSIndexPath * indexPath= [self.tableView indexPathForCell:cellSelected];
+            City * citySelected= self.cities[indexPath.row];
+            
+            PictureCarrousselViewController * destinationController = segue.destinationViewController;
+            destinationController.city= citySelected;
+        }
 }
 
 @end

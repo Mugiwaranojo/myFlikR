@@ -28,10 +28,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //temporaire:
     PictureFetcherLocation location;
-    location.latitude= -20.300842;
-    location.longitude= 57.582092;
+    location.latitude= self.city.latitude.doubleValue;
+    location.longitude= self.city.longitude.doubleValue;
     
     self.readerView.hidden = YES;
     
@@ -40,8 +39,8 @@
         self.pictures = pictures;
         self.readerView.hidden = NO;
         [self.readerView displayPageAtIndex:0 animated:NO];
-        
         self.activityIndicator.hidden=TRUE;
+        
     }];
     self.readerView.delegate = self;
     
