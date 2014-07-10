@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "City+DAO.h"
 
 @interface MyFlikRTests : XCTestCase
 
@@ -26,9 +27,45 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testInsertObjectReturnsAnObject
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertNotNil([City new]);
+}
+
+- (void) testAllCitiesReturnsAnArray
+{
+    XCTAssertNotNil([City allCities]);
+}
+
+- (void) testInsert
+{
+    NSArray * allcities = [City allCities];
+    int countBefore = allcities.count;
+    
+    // insert
+    [City new];
+    
+    NSArray * newAllCities = [City allCities];
+    int countAfter = newAllCities.count;
+    
+    XCTAssertEqual(countAfter, countBefore + 1);
+}
+
+- (void) testDelete
+{
+    // insert
+    City * c = [City new];
+    
+    NSArray * allcities = [City allCities];
+    int countBefore = allcities.count;
+    
+    // insert
+    [City delete:c];
+    
+    NSArray * newAllCities = [City allCities];
+    int countAfter = newAllCities.count;
+    
+    XCTAssertEqual(countAfter, countBefore - 1);
 }
 
 @end

@@ -27,6 +27,9 @@
 		6AB8CE4D196C333D00714DE9 /* MyFlikRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8CE4C196C333D00714DE9 /* MyFlikRTests.m */; };
 		6AB8CE58196C372400714DE9 /* ReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8CE57196C372400714DE9 /* ReaderView.m */; };
 		6AB8CE5A196C39D600714DE9 /* Storyboard_iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB8CE59196C39D600714DE9 /* Storyboard_iphone.storyboard */; };
+		6AFF2CF2196E7E4D0017DC58 /* CityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2CF1196E7E4D0017DC58 /* CityTableViewController.m */; };
+		6AFF2CF5196E8F070017DC58 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2CF4196E8F070017DC58 /* City.m */; };
+		6AFF2CF8196E98050017DC58 /* City+DAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AFF2CF7196E98050017DC58 /* City+DAO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +70,12 @@
 		6AB8CE56196C372400714DE9 /* ReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReaderView.h; sourceTree = "<group>"; };
 		6AB8CE57196C372400714DE9 /* ReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReaderView.m; sourceTree = "<group>"; };
 		6AB8CE59196C39D600714DE9 /* Storyboard_iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard_iphone.storyboard; sourceTree = "<group>"; };
+		6AFF2CF0196E7E4D0017DC58 /* CityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityTableViewController.h; sourceTree = "<group>"; };
+		6AFF2CF1196E7E4D0017DC58 /* CityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityTableViewController.m; sourceTree = "<group>"; };
+		6AFF2CF3196E8F070017DC58 /* City.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		6AFF2CF4196E8F070017DC58 /* City.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		6AFF2CF6196E98050017DC58 /* City+DAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "City+DAO.h"; sourceTree = "<group>"; };
+		6AFF2CF7196E98050017DC58 /* City+DAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "City+DAO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +109,8 @@
 			children = (
 				6AB423D1196D425D005B3E26 /* PictureCarrousselViewController.h */,
 				6AB423D2196D425D005B3E26 /* PictureCarrousselViewController.m */,
+				6AFF2CF0196E7E4D0017DC58 /* CityTableViewController.h */,
+				6AFF2CF1196E7E4D0017DC58 /* CityTableViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -126,10 +137,14 @@
 			isa = PBXGroup;
 			children = (
 				6AB8CE35196C333D00714DE9 /* MyFlikR.xcdatamodeld */,
+				6AFF2CF3196E8F070017DC58 /* City.h */,
+				6AFF2CF4196E8F070017DC58 /* City.m */,
 				6AB423D8196D4552005B3E26 /* Picture.h */,
 				6AB423D9196D4552005B3E26 /* Picture.m */,
 				6AB423DB196D46B6005B3E26 /* FlikRPictureFetcher.h */,
 				6AB423DC196D46B6005B3E26 /* FlikRPictureFetcher.m */,
+				6AFF2CF6196E98050017DC58 /* City+DAO.h */,
+				6AFF2CF7196E98050017DC58 /* City+DAO.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -305,12 +320,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AB423DA196D4552005B3E26 /* Picture.m in Sources */,
+				6AFF2CF8196E98050017DC58 /* City+DAO.m in Sources */,
 				6AB8CE37196C333D00714DE9 /* MyFlikR.xcdatamodeld in Sources */,
 				6AB8CE58196C372400714DE9 /* ReaderView.m in Sources */,
 				6AB423D3196D425D005B3E26 /* PictureCarrousselViewController.m in Sources */,
+				6AFF2CF2196E7E4D0017DC58 /* CityTableViewController.m in Sources */,
 				6AB8CE34196C333D00714DE9 /* AppDelegate.m in Sources */,
 				6AB423DD196D46B6005B3E26 /* FlikRPictureFetcher.m in Sources */,
 				6AB8CE30196C333D00714DE9 /* main.m in Sources */,
+				6AFF2CF5196E8F070017DC58 /* City.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
